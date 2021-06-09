@@ -32,8 +32,8 @@ def mybot():
         
         ndata = t.find_avail(pin_code,date)
         msg.body(ndata)
-        with open('abc.txt','w') as file:
-            file.write('')
+        # with open('abc.txt','w') as file:
+        #     file.write('')
         responded = True
 
     elif(len(incoming_msg)>6 or incoming_msg.isalnum()):
