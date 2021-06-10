@@ -2,17 +2,17 @@ from flask import Flask, request
 import requests
 from twilio.twiml.messaging_response import MessagingResponse
 import datetime
-import os
 import tcase as t
 
 app = Flask(__name__)
 
-@app.route('/mybot', methods = ['POST'] )
+@app.route('/mybot', methods = ['GET','POST'] )
 
 def mybot():
     incoming_msg = request.values.get('Body','').lower()
     resp = MessagingResponse()
     msg = resp.message()
+    age='00'
     pin_code="000000"
     date ="00-00-0000"
     responded = False
@@ -24,7 +24,7 @@ def mybot():
     
     elif('1' in incoming_msg and len(incoming_msg)==1):
         msg.body("What is your District pin code ? (eg Delhi pin 110001)")
-    
+        
     elif(len(incoming_msg)==6 and incoming_msg.isdigit()):
         pin_code = incoming_msg
         date = datetime.datetime.today()
@@ -32,6 +32,7 @@ def mybot():
         
         ndata = t.find_avail(pin_code,date)
         msg.body(ndata)
+        string = ''
         # with open('abc.txt','w') as file:
         #     file.write('')
         responded = True
