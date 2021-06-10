@@ -55,7 +55,7 @@ def mybot():
         
         responded = True
 
-    elif(len(incoming_msg)>6 or incoming_msg.isalnum()):
+    elif(len(incoming_msg)>6 and incoming_msg.isdigit()):
         msg.body("*Type the correct Pin Code*")
 
     else:
