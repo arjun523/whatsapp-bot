@@ -11,3 +11,5 @@ Notably, these bots merely provide information on availability of a slot or a va
 
 The COVID-19 Vaccine Availability Bot will let you know whether vaccine is available in your district currently. To know the details , you have to send join park-continent to 📱 "+1 415-523-8886" on WhatsApp. 
 Once you get connected to Sandbox, then type "Hi" Or "Hello" to initiate the chat. Then type District PIN number to know the information. 
+
+Video link:- https://youtu.be/dlDksJmEtCo
