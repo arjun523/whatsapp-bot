@@ -1,4 +1,4 @@
-# Whatsapp Bot
+# Vaccine Availability Whatsapp Bot
  
 On 1 May, the central government started the third leg of its inoculation drive against COVID-19, in which all citizens over the age of 18 can register themselves to get vaccinated. However, with a huge population of the country belonging to this age bracket, this leg of the vaccination drive isn't going as smoothly as one would've hoped. Five days into the drive, people are still struggling to secure a slot for their first dose of the vaccine. In some cities, the situation is much worse than in others.
 
